@@ -1,0 +1,205 @@
+/* General body styling for dark and light modes */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Dark and light mode classes */
+.dark-mode {
+  background: linear-gradient(135deg, #181818, #222222); /* Dark gradient background */
+  color: #f0f0f0;
+}
+
+.light-mode {
+  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  color: #181818;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Header styling for toggle button */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle-mode {
+  background-color: #007bbd;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+}
+
+.toggle-mode:hover {
+  background-color: #005f99;
+}
+
+/* Full width for the main container */
+.mnemonic-container {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%; /* Adjust width to cover most of the screen */
+  max-width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mnemonic-container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.mnemonic-container p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #a0a0a0;
+}
+
+/* Button for generating seed phrase */
+.generate-seed-button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.generate-seed-button:hover {
+  background-color: #ff3333;
+  transform: translateY(-2px);
+}
+
+/* Mnemonic words as grid */
+.mnemonic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.mnemonic-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3c3c3c;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+
+.mnemonic-box input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.mnemonic-box span {
+  margin-right: 5px;
+}
+
+.copy-button {
+  background-color: #007bbd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #005f99;
+}
+
+/* Button for adding wallet */
+.wallet-button {
+  background-color: #007bbd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wallet-button:hover {
+  background-color: #005f99;
+  transform: translateY(-2px);
+}
+
+/* Displaying wallet keys */
+.wallet-keys {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.public-key-box {
+  background-color: #3c3c3c;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
+.public-key-box span {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.public-key-box button {
+  background-color: #007bbd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.public-key-box button:hover {
+  background-color: #005f99;
+}
