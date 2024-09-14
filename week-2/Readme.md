@@ -7,3 +7,4 @@
     Create a simple web based wallet where someone can come and create a pneumonic, add multiple wallets and see the public key associated with each wallet
 
 
+![Web-wallet](<Screenshot from 2024-09-15 04-24-48.png>)
